@@ -8,7 +8,7 @@ class DirtyCarpetEnv():
         self.reset()
 
     def step(self, action):
-        "Makes one step in the (episodic) environment. Only makes a new tile dirty, if current action == `Suck`."
+        "Makes one step in the (episodic) environment."
         if action == "Suck":
             self.suck_total += 1
             if self.tiles[self.current_tile] == "Dirty":
